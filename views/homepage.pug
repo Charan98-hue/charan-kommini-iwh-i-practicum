@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Cars List
+  body
+    h1 List of Cars
+    a(href='/update-cobj') Add a Car
+    table(border="1")
+      tr
+        th Name
+        th Brand
+        th Type
+      each car in cars
+        tr
+          td= car.properties.name
+          td= car.properties.brand
+          td= car.properties.type
